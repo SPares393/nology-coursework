@@ -1,0 +1,52 @@
+.flag {
+  height: 210px;
+  width: 300px;
+  margin: 25px;
+  border: 2px solid black;
+}
+
+#french {
+  background: repeating-linear-gradient(
+    90deg,
+    blue 0px,
+    blue 100px,
+    white 100px,
+    white 200px,
+    red 200px,
+    red 300px
+  );
+}
+
+#french:active {
+  background: repeating-linear-gradient(
+    90deg,
+    green 0px,
+    green 100px,
+    white 100px,
+    white 200px,
+    orange 200px,
+    orange 300px
+  );
+}
+
+#german {
+  background: repeating-linear-gradient(
+    black 0px,
+    black 70px,
+    red 70px,
+    red 140px,
+    yellow 140px,
+    yellow 210px
+  );
+}
+
+#german:hover {
+  background: repeating-linear-gradient(
+    red 0px,
+    red 70px,
+    white 70px,
+    white 140px,
+    green 140px,
+    green 210px
+  );
+}
