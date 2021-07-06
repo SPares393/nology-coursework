@@ -38,3 +38,25 @@ header h1 {
   min-height: 300px;
   border-radius: 30px;
 }
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+span {
+  font-size: 1.5em;
+  color: #b48ce0;
+}
+
+#penelope-list {
+  list-style-type: none;
+}
+
+footer {
+  margin: 10px;
+}
