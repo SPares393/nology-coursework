@@ -39,11 +39,10 @@ a {
 
 main {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   margin: 25px auto;
   width: 95%;
-  height: 90%;
+  height: 550px;
 }
 
 h3 {
@@ -57,22 +56,20 @@ li {
 #panels-main {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 57.5%;
   justify-content: space-between;
+  height: 100%;
 }
 
 .panel {
   border: 3px solid black;
-  height: 25%;
   padding: 15px;
-  margin: 10px;
 }
 
 #panel-right {
   border: 3px solid black;
   width: 35%;
-  padding: 15px;
-  height: 100%;
+  padding: 20px 20px 0;
   display: flex;
   flex-direction: column;
 }
