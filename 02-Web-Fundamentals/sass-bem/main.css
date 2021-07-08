@@ -38,24 +38,25 @@ nav {
   color: #fafafa;
 }
 
+div {
+  text-align: center;
+}
+div h1 {
+  color: #28527a;
+  font-size: 50px;
+}
+div h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 25px;
+  margin: 20px 0;
+}
+div a {
+  margin: 0 auto;
+}
+
 header {
   height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-header div {
-  text-align: center;
-}
-header div h1 {
-  color: #28527a;
-  font-size: 50px;
-}
-header div h2 {
-  font-family: "Dancing Script", cursive;
-  font-size: 25px;
-  margin: 20px 0;
-}
-header div a {
-  margin: 0 auto;
 }
