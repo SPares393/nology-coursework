@@ -1,4 +1,4 @@
-nav {
+.nav {
   height: 10vh;
   background-color: $color-primary;
   padding: 0 40px;
@@ -24,21 +24,21 @@ nav {
   color: $color-white;
 }
 
-div {
+.intro {
   text-align: center;
 
-  h1 {
+  &__heading {
     color: $color-primary;
     font-size: 50px;
   }
 
-  h2 {
+  &__sub-heading {
     font-family: $font-display;
     font-size: 25px;
     margin: 20px 0;
   }
 
-  a {
+  &__button {
     margin: 0 auto;
   }
 }
