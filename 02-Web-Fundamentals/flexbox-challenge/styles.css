@@ -19,9 +19,10 @@ nav {
 #logo {
   background-color: green;
   width: 15%;
-  height: 100%;
+  display: flex;
   align-items: center;
   justify-content: space-around;
+  height: 100%;
 }
 
 #nav-links {
@@ -42,6 +43,7 @@ main {
   justify-content: space-between;
   margin: 25px auto;
   width: 95%;
+  height: 90%;
 }
 
 h3 {
@@ -71,4 +73,6 @@ li {
   width: 35%;
   padding: 15px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
