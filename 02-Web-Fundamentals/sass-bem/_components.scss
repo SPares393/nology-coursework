@@ -28,6 +28,12 @@
     width: 100%;
     background-color: $color-primary-light;
   }
+
+  &__logout {
+    background-color: $color-white;
+    color: $color-primary;
+    border: 2px solid $color-primary;
+  }
 }
 
 .intro {
@@ -62,5 +68,18 @@
 
   &__input {
     margin-bottom: 20px;
+  }
+}
+
+.footer {
+  height: 10vh;
+  background-color: $color-primary;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__text {
+    color: $color-white;
   }
 }
