@@ -1,0 +1,13 @@
+[class^="con"] {
+  background-color: lightgray;
+  border: 4px solid lightskyblue;
+}
+
+[class^="row"] {
+  min-height: 150px;
+}
+
+[class^="col"] {
+  border: 1px solid lightskyblue;
+  text-align: center;
+}
