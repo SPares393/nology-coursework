@@ -25,6 +25,11 @@ section div {
 
 @media screen and (max-width: 768px) {
   section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 550px) {
+  section {
     grid-template-columns: 1fr;
   }
 }
