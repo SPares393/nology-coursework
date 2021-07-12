@@ -14,26 +14,18 @@ section {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-
-  div {
-    height: 100px;
-  }
-
-  // div {
-  //   width: 33%;
-  //   height: 100px;
-  //   display: inline-block;
-  // }
-
-  div:nth-child(1) {
-    background-color: red;
-  }
-  div:nth-child(2) {
-    background-color: orange;
-  }
-  div:nth-child(3) {
-    background-color: yellow;
-  }
+}
+section div {
+  height: 100px;
+}
+section div:nth-child(1) {
+  background-color: red;
+}
+section div:nth-child(2) {
+  background-color: orange;
+}
+section div:nth-child(3) {
+  background-color: yellow;
 }
 
 @media screen and (max-width: 768px) {
