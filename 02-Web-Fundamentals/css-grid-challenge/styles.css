@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.header {
+  background-color: aqua;
+  grid-area: header;
+}
+
+.menu {
+  background-color: cornflowerblue;
+  grid-area: menu;
+}
+
+.main {
+  background-color: dodgerblue;
+  grid-area: main;
+}
+
+.right {
+  background-color: cornflowerblue;
+  grid-area: right;
+}
+
+.footer {
+  background-color: aqua;
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  height: 100vh;
+  grid-template-areas: "header header header header header" "menu main main main right" "menu main main main right" "menu main main main right" "menu footer footer footer footer";
+}
