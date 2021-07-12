@@ -1,40 +1,25 @@
-// @import "./base";
-// // @import "./components";
-// @import "./layout";
-
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
-
-$font-main: "Crimson Text", Georgia, serif;
-
-$color-primary: #b21124;
-$color-secondary: #9e9864;
-$color-white: #fafafa;
-$color-black: #333333;
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: $font-main;
-  background-color: $color-white;
-  color: $color-black;
+  font-family: "Crimson Text", Georgia, serif;
+  background-color: #fafafa;
+  color: #333333;
 }
 
 .header {
-  //   width: 20%;
-  //   height: 100vh;
   display: fixed;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: $color-primary;
-  color: $color-secondary;
-
-  h1 {
-    background-color: $color-primary;
-    color: $color-secondary;
-    font-size: 3rem;
-  }
+  background-color: #b21124;
+  color: #9e9864;
+}
+.header h1 {
+  background-color: #b21124;
+  color: #9e9864;
+  font-size: 3rem;
 }
 
 .main {
@@ -46,7 +31,7 @@ $color-black: #333333;
 }
 
 .main__card {
-  border: 3px solid $color-secondary;
+  border: 3px solid #9e9864;
   border-radius: 5px;
   height: 75px;
   display: flex;
