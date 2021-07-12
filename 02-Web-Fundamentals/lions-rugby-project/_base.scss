@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+
+$font-main: "Crimson Text", Georgia, serif;
+
+$color-primary: #b21124;
+$color-secondary: #9e9864;
+$color-white: #fafafa;
+$color-black: #333333;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-main;
+  background-color: $color-white;
+  color: $color-black;
+}
