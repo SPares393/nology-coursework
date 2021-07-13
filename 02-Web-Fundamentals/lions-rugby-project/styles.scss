@@ -48,8 +48,41 @@ $color-black: #333333;
 .main__card {
   border: 3px solid $color-secondary;
   border-radius: 5px;
-  height: 75px;
+  height: 90px;
   display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.main__card:hover {
+  opacity: 1;
+}
+
+.card__number {
+  font-family: $font-main;
+  font-size: 2.5rem;
+  width: 25%;
+  //   margin: 0 10px;
+}
+
+.card__name {
+  width: 50%;
+}
+
+.card__flag {
+  font-size: 2rem;
+  width: 20%;
+  //   margin-left: 8px;
+}
+
+.line__divide {
+  height: 60px;
+  width: 1px;
+  border: 1px solid $color-secondary;
+  //   margin-right: 10px;
+  opacity: 0.5;
 }
 
 .front_row_1 {
