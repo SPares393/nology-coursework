@@ -8,26 +8,40 @@
   color: #333333;
 }
 
+body {
+  display: flex;
+}
+
 .header {
+  width: 20%;
+  height: 100vh;
   display: fixed;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: #b21124;
+  background-color: #af0121;
   color: #9e9864;
+  border-right: 3px solid #9e9864;
 }
 .header h1 {
-  background-color: #b21124;
+  background-color: #af0121;
   color: #9e9864;
   font-size: 3rem;
+  padding-left: 15px;
+}
+
+.image__logo {
+  margin: 20% 0;
+  width: 100%;
 }
 
 .main {
+  width: 80vw;
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(6, 1fr);
   grid-gap: 20px;
   padding: 25px;
+  background-image: url("./images/pitch_background.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .main__card {
@@ -36,28 +50,30 @@
   height: 90px;
   display: flex;
   align-items: center;
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-align: center;
-  opacity: 0.5;
+  opacity: 0.75;
+  box-shadow: 2.5px 2.5px;
 }
 
 .main__card:hover {
   opacity: 1;
+  box-shadow: 5px 5px;
 }
 
 .card__number {
   font-family: "Crimson Text", Georgia, serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   width: 25%;
 }
 
 .card__name {
-  width: 50%;
+  width: 45%;
 }
 
 .card__flag {
   font-size: 2rem;
-  width: 20%;
+  width: 25%;
 }
 
 .line__divide {
@@ -69,75 +85,75 @@
 
 .front_row_1 {
   grid-row: 1/2;
-  grid-column: 2/3;
+  grid-column: 1/2;
 }
 
 .front_row_2 {
   grid-row: 1/2;
-  grid-column: 4/5;
+  grid-column: 3/4;
 }
 
 .front_row_3 {
   grid-row: 1/2;
-  grid-column: 6/7;
+  grid-column: 5/6;
 }
 
 .second_row_1 {
   grid-row: 2/3;
-  grid-column: 3/4;
+  grid-column: 2/3;
 }
 
 .second_row_2 {
   grid-row: 2/3;
-  grid-column: 5/6;
+  grid-column: 4/5;
 }
 
 .back_row_1 {
   grid-row: 3/4;
-  grid-column: 2/3;
+  grid-column: 1/2;
 }
 
 .back_row_2 {
   grid-row: 3/4;
-  grid-column: 4/5;
+  grid-column: 3/4;
 }
 
 .back_row_3 {
   grid-row: 3/4;
-  grid-column: 6/7;
+  grid-column: 5/6;
 }
 
 .half_back_1 {
   grid-row: 4/5;
-  grid-column: 3/4;
+  grid-column: 2/3;
 }
 
 .half_back_2 {
   grid-row: 4/5;
-  grid-column: 4/5;
+  grid-column: 3/4;
 }
 
 .centre_1 {
   grid-row: 5/6;
-  grid-column: 4/5;
+  grid-column: 3/4;
 }
 
 .centre_2 {
   grid-row: 5/6;
-  grid-column: 5/6;
+  grid-column: 4/5;
 }
 
 .back_three_1 {
   grid-row: 6/7;
-  grid-column: 2/3;
+  grid-column: 1/2;
 }
 
 .back_three_2 {
   grid-row: 6/7;
-  grid-column: 4/5;
+  grid-column: 3/4;
 }
 
 .back_three_3 {
   grid-row: 6/7;
-  grid-column: 6/7;
+  grid-column: 5/6;
 }
