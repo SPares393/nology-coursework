@@ -1,6 +1,32 @@
+// Problem Solving
+// Client brief - create an application which can be used to keep track of the score in a football game
+
+// 1. Need 2 teams, 2 scores
+let teamScoreOne = 0;
+let teamScoreTwo = 0;
+let isGameStopped = false;
+
+// 2. When team 1 button is clicked, increment team 1 score
+function handleTeamOneClick() {
+  teamScoreOne++;
+  console.log(teamScoreOne);
+}
+
+// 3. When team 2 button is clicked, increment team 2 score
+function handleTeamTwoClick() {
+  teamScoreTwo++;
+  console.log(teamScoreTwo);
+}
+
+// 4. When do we finish?
+function handleStopGame() {
+  isGameStopped = true;
+}
+
+/*
 // NAMING CONVENTIONS
 
-const currentHeadline = "News in the world today";
+let currentHeadline = "News in the world today";
 const currentArticle =
   "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut repellat placeat cum porro quia tempore delectus amet laudantium quis sint.";
 
@@ -9,13 +35,14 @@ const hasPassedTest = true;
 
 const amountOfWords = 957;
 
-if (currentHeadline.length > 20) {
-  headline = currentHeadline + "...";
+if (currentHeadline.length > 15) {
+  currentHeadline = currentHeadline.substring(0, 15) + "...";
 }
 
 console.log("Nology Post 2021");
-console.log(`Headline: ${headline}`);
-console.log(article);
+console.log(`Headline: ${currentHeadline}`);
+console.log(currentArticle);
+*/
 
 /*
 // Challenge 1
