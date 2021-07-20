@@ -1,3 +1,18 @@
+// ARRAYS & LOOPS
+// 1. Create an array of names
+const names = ["Stu", "Bruce", "Lofty"];
+console.log(names[1]);
+
+// 2. Create an array of pets
+const pets = ["dog", "cat", "rabbit"];
+console.log(pets[2]);
+
+// 3. Create a sample for loop
+for (let i = 0; i < pets.length; i++) {
+  console.log(`I have a ${pets[i]}`);
+}
+
+/*
 // Problem Solving
 // Client brief - create an application which can be used to keep track of the score in a football game
 
