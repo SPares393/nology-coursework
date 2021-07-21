@@ -1,16 +1,46 @@
 // ARRAYS & LOOPS
 // 1. Create an array of names
 const names = ["Stu", "Bruce", "Lofty"];
-console.log(names[1]);
 
+// 6. Filter
+const dogs = names.filter((name) => {
+  if (name == "Bruce" || name == "Lofty") {
+    return true;
+  }
+});
+console.log(dogs);
+
+const scores = [8, 9, 12];
+
+const highScores = scores.filter((score) => score > 10);
+console.log(highScores);
+
+/*
 // 2. Create an array of pets
 const pets = ["dog", "cat", "rabbit"];
-console.log(pets[2]);
+// console.log(pets[2]);
 
 // 3. Create a sample for loop
-for (let i = 0; i < pets.length; i++) {
-  console.log(`I have a ${pets[i]}`);
-}
+// for (let i = 0; i < pets.length; i++) {
+//   console.log(`I have a ${pets[i]}`);
+// }
+
+// 4. Create a sample forEach loop
+names.forEach((name) => {
+  console.log(`Hello ${name}`);
+});
+
+// 5. Use a map to create a new array
+const greetings = names.map((name) => {
+  return `Hello ${name}`;
+});
+console.log(greetings);
+
+const bigPets = pets.map((pet) => {
+  return pet.toUpperCase();
+});
+console.log(bigPets);
+*/
 
 /*
 // Problem Solving
