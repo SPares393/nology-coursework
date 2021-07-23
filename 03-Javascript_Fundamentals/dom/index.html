@@ -26,7 +26,7 @@
       <input onfocus="alert('I was focused')" type="text" />
     </form> -->
 
-    <h1 id="heading">Hello</h1>
+    <h1 id="heading">Hello<span>User</span></h1>
     <button id="button">Click me</button>
     <form action="">
       <input type="text" class="text-input" />
@@ -44,8 +44,16 @@
       const textInputs = document.getElementsByClassName("text-input");
 
       console.dir(heading);
+      heading.innerHTML = "Javascript <span>did this</span>";
+
       console.dir(button);
-      console.log(textInputs);
+      button.style.backgroundColor = "green";
+      button.innerHTML = "Clicked :)";
+
+      console.log(textInputs[0]);
+      for (let i = 0; i < textInputs.length; i++) {
+        textInputs[i].value = "The user was here";
+      }
     </script>
   </body>
 </html>
