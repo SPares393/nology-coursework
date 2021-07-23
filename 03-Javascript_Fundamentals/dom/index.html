@@ -17,12 +17,35 @@
     </style>
   </head>
   <body>
-    <h1 onmouseover="alert('Mouse over')">This is my heading</h1>
+    <!-- EVENT ATTRIBUTE -->
+    <!-- <h1 onmouseover="alert('Mouse over')">This is my heading</h1>
 
     <button onclick="alert('I was clicked')">Click me</button>
 
     <form action="">
       <input onfocus="alert('I was focused')" type="text" />
+    </form> -->
+
+    <h1 id="heading">Hello</h1>
+    <button id="button">Click me</button>
+    <form action="">
+      <input type="text" class="text-input" />
+      <input type="text" class="text-input" />
     </form>
+
+    <script>
+      //   console.log(document.getElementById("heading"));
+
+      // Getting an HTML element reference
+      const heading = document.getElementById("heading");
+      const button = document.getElementById("button");
+
+      // Getting multiple elements
+      const textInputs = document.getElementsByClassName("text-input");
+
+      console.dir(heading);
+      console.dir(button);
+      console.log(textInputs);
+    </script>
   </body>
 </html>
