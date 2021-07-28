@@ -14,6 +14,14 @@
         background-color: lightgreen;
         border: 5px solid green;
       }
+
+      form {
+        margin: 20px 5px;
+      }
+
+      form * {
+        display: block;
+      }
     </style>
   </head>
   <body>
@@ -26,34 +34,78 @@
       <input onfocus="alert('I was focused')" type="text" />
     </form> -->
 
-    <h1 id="heading">Hello<span>User</span></h1>
+    <h1 id="heading">Hello <span>User</span></h1>
     <button id="button">Click me</button>
     <form action="">
       <input type="text" class="text-input" />
       <input type="text" class="text-input" />
     </form>
 
+    <form action="" id="name-form">
+      <input type="text" id="name-input" />
+      <button>Submit</button>
+    </form>
+
+    <ul id="names-list"></ul>
+
     <script>
       //   console.log(document.getElementById("heading"));
 
-      // Getting an HTML element reference
+      //   Getting an HTML element reference
       const heading = document.getElementById("heading");
       const button = document.getElementById("button");
 
-      // Getting multiple elements
+      //   // Getting multiple elements
       const textInputs = document.getElementsByClassName("text-input");
 
-      console.dir(heading);
-      heading.innerHTML = "Javascript <span>did this</span>";
+      //   console.dir(heading);
+      //   heading.innerHTML = "Javascript <span>did this</span>";
 
-      console.dir(button);
-      button.style.backgroundColor = "green";
-      button.innerHTML = "Clicked :)";
+      //   console.dir(button);
+      //   button.style.backgroundColor = "green";
+      //   button.innerHTML = "Clicked :)";
 
-      console.log(textInputs[0]);
-      for (let i = 0; i < textInputs.length; i++) {
-        textInputs[i].value = "The user was here";
-      }
+      //   // Interacting with multiple elements
+      //   console.log(textInputs[0]);
+      //   for (let i = 0; i < textInputs.length; i++) {
+      //     textInputs[i].value = "The user was here";
+      //   }
+
+      // Adding event listeners
+      heading.addEventListener("mouseover", () => {
+        heading.innerHTML = "Javascript did this";
+      });
+
+      heading.addEventListener("mouseleave", () => {
+        heading.innerHTML = "Hello <span>User</span>";
+      });
+
+      button.addEventListener("click", () => {
+        button.innerHTML = "clicked :)";
+        button.style.backgroundColor = "green";
+      });
+
+      textInputs[0].addEventListener("focus", () => {
+        textInputs[0].classList.add("valid");
+      });
+
+      textInputs[1].addEventListener("input", (event) => {
+        // console.log(event);
+        // event.target.classList.add("valid");
+        console.log(event.target.value);
+      });
+
+      const nameForm = document.getElementById("name-form");
+
+      nameForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const namesList = document.getElementById("names-list");
+
+        const inputValue = document.getElementById("name-input").value;
+
+        namesList.innerHTML += `<li>${inputValue}</li>`;
+      });
     </script>
   </body>
 </html>
