@@ -3,3 +3,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  margin: 20px;
+}
+
+.calculator-main {
+  border: 3px solid black;
+  width: 300px;
+  margin: 20px;
+  padding: 10px;
+}
+
+.calculator-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0;
+}

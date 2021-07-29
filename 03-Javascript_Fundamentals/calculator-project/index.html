@@ -7,6 +7,24 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Calculator Project</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <h1>Calculator Project</h1>
+    </header>
+    <section class="calculator-main">
+      <form
+        action=""
+        onsubmit="event.preventDefault()"
+        class="calculator-inputs"
+      >
+        <input type="number" class="inputNumber1" />
+        <input type="text" class="inputOperator" />
+        <input type="number" class="inputNumber2" />
+        <button class="calculator-answer">Calculate</button>
+        <button class="calculator-reset">Reset</button>
+      </form>
+      <div class="calculator-output">Answer:</div>
+    </section>
+  </body>
   <script src="script.js"></script>
 </html>
