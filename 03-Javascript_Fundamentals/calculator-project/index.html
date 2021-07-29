@@ -8,22 +8,41 @@
     <title>Calculator Project</title>
   </head>
   <body>
-    <header class="header">
-      <h1>Calculator Project</h1>
-    </header>
     <section class="calculator-main">
-      <form
-        action=""
-        onsubmit="event.preventDefault()"
-        class="calculator-inputs"
-      >
-        <input type="number" step="any" class="inputNumber1" />
-        <input type="text" class="inputOperator" />
-        <input type="number" step="any" class="inputNumber2" />
+      <form action="" onsubmit="event.preventDefault()" class="calculator-form">
+        <div class="calculator-inputs">
+          <input type="number" step="any" class="calculator-input-1" />
+          <div class="current-operator">?</div>
+          <input type="number" step="any" class="calculator-input-2" />
+        </div>
+        <div class="calculator-operators">
+          <button class="operator">+</button>
+          <button class="operator">-</button>
+          <button class="operator">*</button>
+          <button class="operator">/</button>
+        </div>
         <button class="calculator-answer">Calculate</button>
         <button class="calculator-reset">Reset</button>
+        <div class="calculator-output">Answer:</div>
       </form>
-      <div class="calculator-output">Answer:</div>
+    </section>
+
+    <section class="calculator-main">
+      <form action="" onsubmit="event.preventDefault()">
+        <input type="text" class="calculator-input-3" />
+        <div class="calculator-numbers">
+          <button class="number">1</button>
+          <button class="number">2</button>
+          <button class="number">3</button>
+          <button class="number">4</button>
+          <button class="number">5</button>
+          <button class="number">6</button>
+          <button class="number">7</button>
+          <button class="number">8</button>
+          <button class="number">9</button>
+          <button class="number">0</button>
+        </div>
+      </form>
     </section>
   </body>
   <script src="script.js"></script>
