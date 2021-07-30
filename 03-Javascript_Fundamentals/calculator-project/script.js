@@ -3,8 +3,7 @@ const number = document.querySelectorAll(".number");
 const operator = document.querySelectorAll(".operator");
 const calculatorTotal = document.querySelector(".calculator-total");
 const calculatorReset = document.querySelector(".calculator-reset");
-
-let total = 0;
+const calculationList = document.querySelector(".calculation-list");
 
 for (let i = 0; i < number.length; i++) {
   number[i].addEventListener("click", () => {
@@ -18,6 +17,10 @@ for (let i = 0; i < operator.length; i++) {
   });
 }
 
+const addToList = function (arr, sumResult) {
+  calculationList.innerHTML += `<li>${arr[0]} ${arr[1]} ${arr[2]} = ${sumResult}</li>`;
+};
+
 calculatorTotal.addEventListener("click", () => {
   const sumArr = calculatorInput.value.split(" ");
   console.log(sumArr);
@@ -30,15 +33,23 @@ calculatorTotal.addEventListener("click", () => {
     if (sumArr[1] === "+") {
       result = firstNumber + secondNumber;
       calculatorInput.value = result;
+      addToList(sumArr, result);
     } else if (sumArr[1] === "-") {
       result = firstNumber - secondNumber;
       calculatorInput.value = result;
+      addToList(sumArr, result);
     } else if (sumArr[1] === "*") {
       result = firstNumber * secondNumber;
       calculatorInput.value = result;
+      addToList(sumArr, result);
     } else if (sumArr[1] === "/") {
       result = firstNumber / secondNumber;
       calculatorInput.value = result;
+      addToList(sumArr, result);
+    }
+  } else if (sumArr.length > 3) {
+    for (let i = 0; i < sumArr.length; i++) {
+      let total = 0;
     }
   }
 });
