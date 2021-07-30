@@ -81,11 +81,11 @@ calculatorTotal.addEventListener("click", () => {
         console.log(total);
         calculatorInput.value = total;
       } else if (i === "*") {
-        total -= sumArr[i + 1];
+        total *= sumArr[i + 1];
         console.log(total);
         calculatorInput.value = total;
       } else if (i === "/") {
-        total -= sumArr[i + 1];
+        total /= sumArr[i + 1];
         console.log(total);
         calculatorInput.value = total;
       } else {
