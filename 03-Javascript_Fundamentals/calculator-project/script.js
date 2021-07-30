@@ -48,8 +48,49 @@ calculatorTotal.addEventListener("click", () => {
       addToList(sumArr, result);
     }
   } else if (sumArr.length > 3) {
-    for (let i = 0; i < sumArr.length; i++) {
-      let total = 0;
+    let total = 0;
+    const firstNumber = Number(sumArr[0]);
+    const secondNumber = Number(sumArr[2]);
+    let result;
+    if (sumArr[1] === "+") {
+      result = firstNumber + secondNumber;
+      total += result;
+      calculatorInput.value = total;
+      console.log(total);
+    } else if (sumArr[1] === "-") {
+      result = firstNumber - secondNumber;
+      total += result;
+      calculatorInput.value = total;
+    } else if (sumArr[1] === "*") {
+      result = firstNumber * secondNumber;
+      total += result;
+      calculatorInput.value = total;
+    } else if (sumArr[1] === "/") {
+      result = firstNumber / secondNumber;
+      total += result;
+      calculatorInput.value = total;
+    }
+
+    for (let i = 3; i < sumArr.length; i++) {
+      if (i === "+") {
+        total += sumArr[i + 1];
+        console.log(total);
+        calculatorInput.value = total;
+      } else if (i === "-") {
+        total -= sumArr[i + 1];
+        console.log(total);
+        calculatorInput.value = total;
+      } else if (i === "*") {
+        total -= sumArr[i + 1];
+        console.log(total);
+        calculatorInput.value = total;
+      } else if (i === "/") {
+        total -= sumArr[i + 1];
+        console.log(total);
+        calculatorInput.value = total;
+      } else {
+        continue;
+      }
     }
   }
 });
