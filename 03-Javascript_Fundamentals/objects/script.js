@@ -1,26 +1,36 @@
+const studentContainer = document.querySelector(".students-container");
+
 const person = {
   firstName: "Stuart",
   lastName: "Pares",
-  quote: "Some people never go mad. What boring lives they must lead",
+  quote: "Some people never go mad... what boring lives they must lead.",
   skills: ["html", "css", "javascript"],
+  imgURL:
+    "https://www.searchpng.com/wp-content/uploads/2019/02/Deafult-Profile-Pitcher.png",
   getFullName() {
     return `${this.firstName} ${this.lastName}`;
   },
   getSkillsHTML() {
-    // My attempt:
-    // for (let i = 0; i < this.skills.length; i++) {
-    //   return `<li>${this.skills[i]}</li>`;
-    // }
-
-    // Charlie's solution:
     const skillsHTML = this.skills.map((skill) => `<li>${skill}</li>`);
-    console.log(skillsHTML);
     return skillsHTML.join("\n");
+  },
+  getPersonHTML() {
+    return `
+      <article class="student-card">
+          <img src="${this.imgURL}" />
+          <h2>${this.getFullName()}</h2>
+          <blockquote>${this.quote}</blockquote>
+          <h3>Skills</h3>
+          <ul>${this.getSkillsHTML()}</ul>
+      </article>
+  `;
   },
 };
 
+studentContainer.innerHTML = person.getPersonHTML();
+
 person.age = 30;
-console.log(person.getSkillsHTML());
+// console.log(person.getSkillsHTML());
 // console.log(person);
 // console.log(person.getFullName());
 
