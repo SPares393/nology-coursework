@@ -1,14 +1,28 @@
 const person = {
   firstName: "Stuart",
   lastName: "Pares",
+  quote: "Some people never go mad. What boring lives they must lead",
+  skills: ["html", "css", "javascript"],
   getFullName() {
     return `${this.firstName} ${this.lastName}`;
+  },
+  getSkillsHTML() {
+    // My attempt:
+    // for (let i = 0; i < this.skills.length; i++) {
+    //   return `<li>${this.skills[i]}</li>`;
+    // }
+
+    // Charlie's solution:
+    const skillsHTML = this.skills.map((skill) => `<li>${skill}</li>`);
+    console.log(skillsHTML);
+    return skillsHTML.join("\n");
   },
 };
 
 person.age = 30;
-console.log(person);
-console.log(person.getFullName());
+console.log(person.getSkillsHTML());
+// console.log(person);
+// console.log(person.getFullName());
 
 // // OBJET SYNTAX
 
