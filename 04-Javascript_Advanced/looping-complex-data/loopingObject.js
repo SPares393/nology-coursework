@@ -96,5 +96,5 @@ const validateMessageObject = (messageObject) => {
   return validation;
 };
 
-console.log(validateMessageObject(validMessage));
-console.log(validateMessageObject(invalidMessage));
+// console.log(validateMessageObject(validMessage));
+// console.log(validateMessageObject(invalidMessage));
