@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.random-beer {
+  border: 3px solid dodgerblue;
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 10px 15px 20px;
+  text-align: center;
+  line-height: 2;
+  max-width: 550px;
+}
+
+.random-beer p {
+  font-size: 0.75rem;
+}
