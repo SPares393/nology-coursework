@@ -13,11 +13,20 @@ body {
 
 .header {
   font-size: 1.5rem;
-  margin: 25px;
+  margin-top: 25px;
+}
+
+.button {
+  color: limegreen;
+  background-color: dimgrey;
+  font-size: 2rem;
+  margin: 15px;
+  width: 350px;
+  padding: 10px;
 }
 
 .game-area {
-  height: 650px;
+  height: 625px;
   width: 1200px;
   border: 10px solid limegreen;
   border-radius: 25px;
@@ -56,13 +65,4 @@ body {
 
 .hit-points {
   font-size: 3rem;
-}
-
-.button-fire {
-  color: limegreen;
-  background-color: dimgrey;
-  font-size: 2rem;
-  margin: 15px;
-  width: 350px;
-  padding: 10px;
 }

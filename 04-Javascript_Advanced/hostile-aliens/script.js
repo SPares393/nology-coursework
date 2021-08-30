@@ -25,6 +25,7 @@ const defenceShip = new Ship("Defence Ship", 80, 10, 5);
 const theMotherShip = new MotherShip("The Mother Ship", 100, 9, 1);
 
 // Query Selectors
+const buttonReset = document.querySelector(".button-reset");
 const gameArea = document.querySelector(".game-area");
 const buttonFire = document.querySelector(".button-fire");
 
@@ -49,7 +50,9 @@ const gameInit = () => {
 };
 gameInit();
 
-const ships = document.querySelectorAll(".ship");
+buttonReset.addEventListener("click", gameInit);
+
+let ships = document.querySelectorAll(".ship");
 
 // Get random ship
 const getRandomShip = () => {
@@ -58,6 +61,8 @@ const getRandomShip = () => {
 
 // Do damage
 const fire = () => {
+  ships = document.querySelectorAll(".ship");
+
   const shipToDamage = ships[getRandomShip()];
   shipToDamage.style.backgroundColor = "yellow";
   let currentShipHealth = shipToDamage.lastElementChild.innerText;
@@ -80,3 +85,8 @@ const fire = () => {
 };
 
 buttonFire.addEventListener("click", fire);
+
+// TO DO:
+
+// Link methods from classes
+// For loop in createShipHTML function
