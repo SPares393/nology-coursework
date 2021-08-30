@@ -38,6 +38,24 @@ body {
   border-radius: 25px;
   height: 150px;
   padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.destroyed {
+  border-radius: 25px;
+  height: 150px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hit-points {
+  font-size: 3rem;
 }
 
 .button-fire {
