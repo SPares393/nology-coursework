@@ -17,10 +17,27 @@ body {
 }
 
 .game-area {
-  height: 75vh;
-  width: 75vw;
+  height: 650px;
+  width: 1200px;
   border: 10px solid limegreen;
   border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.row-1,
+.row-2,
+.row-3 {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 25px;
+}
+
+.ship {
+  background-color: limegreen;
+  border-radius: 25px;
+  height: 150px;
+  padding: 5px;
 }
 
 .button-fire {
@@ -28,6 +45,6 @@ body {
   background-color: dimgrey;
   font-size: 2rem;
   margin: 15px;
-  width: 300px;
-  padding: 5px;
+  width: 350px;
+  padding: 10px;
 }
