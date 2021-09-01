@@ -81,3 +81,5 @@ const getRandomBeer = () => {
 };
 
 getRandomBeer();
+getRandomBeer();
+getRandomBeer();
