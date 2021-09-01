@@ -6,17 +6,12 @@ class Ship {
     this.hitDamage = hitDamage;
     this.quantity = quantity;
   }
-  takeDamage() {
-    this.hitPoints = this.hitPoints - this.hitDamage;
-  }
-  destroy() {}
 }
 
 class MotherShip extends Ship {
   constructor(name, hitPoints, hitDamage) {
     super(name, hitPoints, hitDamage);
   }
-  destroy() {}
 }
 
 // Create ship objects
@@ -30,11 +25,7 @@ const gameArea = document.querySelector(".game-area");
 const buttonFire = document.querySelector(".button-fire");
 
 const createShipHTML = (shipClass) => {
-  //   let shipHMTL = "";
-  //   for (let i = 1; i < shipClass.quantity; i++) {
-  //   shipHMTL +=
   return `<div class="ship"><h3>${shipClass.name}</h3><p class="hit-points">${shipClass.hitPoints}</p></div>`;
-  //   }
 };
 
 // Start game
@@ -51,8 +42,6 @@ const gameInit = () => {
 gameInit();
 
 buttonReset.addEventListener("click", gameInit);
-
-let ships = document.querySelectorAll(".ship");
 
 // Get random ship
 const getRandomShip = () => {
@@ -77,16 +66,20 @@ const fire = () => {
   shipToDamage.lastElementChild.innerHTML = currentShipHealth;
 
   if (currentShipHealth < 1) {
-    shipToDamage.classList.add("destroyed");
-    shipToDamage.style.backgroundColor = "crimson";
-    shipToDamage.innerHTML = `<h3>Destroyed!</h3>`;
-    shipToDamage.classList.remove("ship");
+    if (shipToDamage.firstElementChild.innerText === "The Mother Ship") {
+      ships.forEach((ship) => {
+        ship.classList.add("destroyed");
+        ship.style.backgroundColor = "crimson";
+        ship.innerHTML = `<h3>Destroyed!</h3>`;
+        ship.classList.remove("ship");
+      });
+    } else {
+      shipToDamage.classList.add("destroyed");
+      shipToDamage.style.backgroundColor = "crimson";
+      shipToDamage.innerHTML = `<h3>Destroyed!</h3>`;
+      shipToDamage.classList.remove("ship");
+    }
   }
 };
 
 buttonFire.addEventListener("click", fire);
-
-// TO DO:
-
-// Link methods from classes
-// For loop in createShipHTML function
