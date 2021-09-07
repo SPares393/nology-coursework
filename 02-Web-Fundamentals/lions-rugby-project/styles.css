@@ -26,6 +26,15 @@ body {
   font-size: 3rem;
   padding-left: 15px;
 }
+.header ul {
+  background-color: #af0121;
+  color: #9e9864;
+}
+.header ul li {
+  padding: 5px 10px;
+  background-color: #af0121;
+  color: #9e9864;
+}
 
 .image__logo {
   margin: 20% 0;
@@ -34,7 +43,10 @@ body {
 
 .main {
   width: 80vw;
+  height: 100vh;
   display: grid;
+  position: fixed;
+  left: 20%;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(6, 1fr);
   grid-gap: 20px;
@@ -42,6 +54,33 @@ body {
   background-image: url("./images/pitch_background.jpeg");
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+.player-list {
+  position: fixed;
+  width: 350px;
+  height: 450px;
+  background-color: #fafafa;
+  border-radius: 10px;
+  border: 5px solid #9e9864;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.player-list-button {
+  margin: 5px;
+  width: 200px;
+  padding: 5px;
+  border: 3px solid #9e9864;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
 .main__card {
@@ -59,6 +98,13 @@ body {
 .main__card:hover {
   opacity: 1;
   box-shadow: 5px 5px;
+  transform: scale(1.1);
+}
+
+.active {
+  opacity: 1;
+  border: 5px solid #9e9864;
+  transform: scale(1.1);
 }
 
 .card__number {
@@ -69,18 +115,12 @@ body {
 
 .card__name {
   width: 45%;
+  font-size: 1.25rem;
 }
 
 .card__flag {
   font-size: 2rem;
   width: 25%;
-}
-
-.line__divide {
-  height: 60px;
-  width: 1px;
-  border: 1px solid #9e9864;
-  opacity: 0.5;
 }
 
 .front_row_1 {
