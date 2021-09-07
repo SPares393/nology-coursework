@@ -1,15 +1,32 @@
 import styles from "./App.module.scss";
 
 const App = () => {
-  return <p className={styles.para}>App works</p>;
+  return (
+    <>
+      <nav>
+        <h1>Ticket Tracker</h1>
+      </nav>
+      <section>
+        <div>
+          <h2>Employee Name</h2>
+          <h3>Employee Role</h3>
+          <div>
+            <h3>Tickets</h3>
+            <h2>0</h2>
+            <button>+</button>
+            <button>-</button>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 };
 
 export default App;
 
-// 1. Change title in public/index.html
-// 2. Rename src/App.js => App.jsx
-// 3. Clear out code from return in App.jsx
-// 4. Clear out code from App.css
-// 5. Add global reset to index.css
-// 6. Install sass ('npm install sass' in directory)
-// 7. Rename App.css => App.module.css & change import
+///// REQUIREMENTS /////
+// Create the components you think you will need (at least an employee component, possibly more)
+// Map over the data file below to create the components
+// Pass data into them via props
+// Use State to handle the increment and decrement of tickets
+// Style it however you like, but don’t leave it blank
