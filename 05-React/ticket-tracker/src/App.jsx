@@ -12,7 +12,7 @@ const App = () => {
       <Info />
       <section className={styles.cardContainer}>
         {team.map((team) => (
-          <Card teamData={team} />
+          <Card teamData={team} key={team.id} />
         ))}
       </section>
     </>
