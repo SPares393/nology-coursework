@@ -1,3 +1,6 @@
-.para {
-  color: green;
+.cardRow {
+  display: flex;
+  padding: 50px;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
