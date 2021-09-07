@@ -1,22 +1,19 @@
 import styles from "./App.module.scss";
 import NavBar from "./components/NavBar/NavBar";
 import Card from "./components/Card/Card";
+import Info from "./components/Info/Info";
+
+import team from "./team.js";
 
 const App = () => {
   return (
     <>
       <NavBar />
-      <section class={styles.cardRow}>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+      <Info />
+      <section className={styles.cardRow}>
+        {team.map((team) => (
+          <Card teamData={team} />
+        ))}
       </section>
     </>
   );
