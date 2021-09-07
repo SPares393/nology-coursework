@@ -1,6 +1,8 @@
-.cardRow {
+.cardContainer {
   display: flex;
-  padding: 50px;
-  // justify-content: space-around;
+  flex-direction: column;
+  padding: 30px;
+  justify-content: space-around;
   flex-wrap: wrap;
+  max-height: 80vh;
 }

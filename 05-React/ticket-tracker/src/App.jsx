@@ -10,7 +10,7 @@ const App = () => {
     <>
       <NavBar />
       <Info />
-      <section className={styles.cardRow}>
+      <section className={styles.cardContainer}>
         {team.map((team) => (
           <Card teamData={team} />
         ))}

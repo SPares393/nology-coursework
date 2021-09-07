@@ -1,12 +1,17 @@
+@import "../../variables.scss";
+
 .card {
   display: flex;
-  flex-direction: column;
-  border: 3px solid #ffb319;
+  flex-wrap: wrap;
+  border: 3px solid $secondary-color;
   border-radius: 25px;
-  padding: 25px;
+  padding: 15px 25px;
   margin: 0 25px 25px;
-  align-items: center;
+  justify-content: space-between;
   min-width: 300px;
+  width: 800px;
+  box-shadow: $box-shadow;
+  background: radial-gradient(circle, $primary-color 0%, $secondary-color 100%);
 
   h2,
   h3 {

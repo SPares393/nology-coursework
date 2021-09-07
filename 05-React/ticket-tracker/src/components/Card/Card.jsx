@@ -8,9 +8,13 @@ const Card = (props) => {
   return (
     <>
       <div className={styles.card}>
-        <h2>{name}</h2>
-        <h3>{role}</h3>
-        <Counter />
+        <div>
+          <h2>{name}</h2>
+          <h3>{role}</h3>
+        </div>
+        <div className={styles.counter}>
+          <Counter className={styles.counter} />
+        </div>
       </div>
     </>
   );

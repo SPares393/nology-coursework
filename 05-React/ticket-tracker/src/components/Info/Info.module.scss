@@ -1,4 +1,6 @@
+@import "../../variables.scss";
+
 .info {
   padding: 20px 30px;
-  border-bottom: 2px solid #ffb319;
+  border-bottom: 2px solid $secondary-color;
 }
