@@ -1,11 +1,10 @@
 import styles from "./App.module.scss";
+import NavBar from "./components/NavBar/NavBar";
 
 const App = () => {
   return (
     <>
-      <nav>
-        <h1>Ticket Tracker</h1>
-      </nav>
+      <NavBar />
       <section>
         <div>
           <h2>Employee Name</h2>
